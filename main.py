@@ -56,7 +56,7 @@ async def start_message(message: types.Message):
 @dp.message_handler(morning_words_checker)
 async def morning_message(message: types.Message):
     await message.reply("доброе утро ❤️💓💗")
-    await message.answer("https://vgif.ru/gifs/137/vgif-ru-15282.gif")
+    await message.reply_animation("https://vgif.ru/gifs/137/vgif-ru-15282.gif")
 
 @dp.message_handler(admin_checker)
 async def all_messages(message: types.Message):
